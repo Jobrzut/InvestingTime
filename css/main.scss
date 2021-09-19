@@ -227,6 +227,20 @@ ul.features-list {
     
     }
 
+    .line {
+        width: 80%;
+        height: 2px;
+        background: white;
+        transform: scaleX(0);
+        transition: ease-in-out .3s;
+        margin: 0 auto;
+
+    }
+
+    .line-active {
+        transform: scaleX(1);
+    }
+
     li {
         a {
             color: white;
@@ -234,19 +248,18 @@ ul.features-list {
             display: block;
             padding: .5em;
             font-size: 1.3em;
-            text-align: right;
-
-            &:hover {
-                font-weight: bold;
-            }
+            text-align: center;
+            transition: ease-in-out 0.2s;
         }
     }
     }
 
     .mobile-exit {
         float: right;
-        margin: .5em;
+        margin: -18px 0 0 0;
         cursor: pointer;
+        color: white;
+        font-size: 45px;
     }
     
     @media screen and (min-width: 768px) {
